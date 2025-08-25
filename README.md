@@ -22,7 +22,6 @@ Given a valid **k-AP** instance, its decomposition can be obtained using the _ba
   - **s**: Path in which to save the generated sub-instance folder.
   - **p**: Precision for the _MPFR_ library (256 bits by default).
   - **d**: If set, standardizes the generated sub-instances so that the standard deviation of their objective function is 1.
-  - **a**: If set, accumulates generated sub-instances by order.
 
 For example, the following command performs the decomposition of the _./data/2-AP.dat_ instance, storing the standardized sub-instances in the _./data/2-AP-decomposed/_ folder:
 
@@ -30,7 +29,7 @@ For example, the following command performs the decomposition of the _./data/2-A
 bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed/ -d
 ```
 
-Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will be stored in a file called $a_1$ \_ $a_2$ ...\_ $a_m$ _.dat_.
+Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will be stored in a file called $(n-a_1)$ \_\_ $a_1$ \_ $a_2$ ...\_ $a_m$ _.dat_.
 
 ## Requirements ✅
 
