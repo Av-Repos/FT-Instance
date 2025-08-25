@@ -26,6 +26,8 @@ Given a valid **k-AP** instance, its decomposition can be obtained using the _ba
 
 For example, the following command performs the decomposition of the _./data/2-AP.dat_ instance, storing the standardized sub-instances in the _./data/2-AP-decomposed_ folder:
 
-  > bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed -d
+```
+bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed -d
+```
 
 Note that the sub-instance associated to the partition (a1,...,am) will be stored in a file called _a1\_...\_am.dat_.
