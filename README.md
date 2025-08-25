@@ -6,10 +6,12 @@ This repository contains the code used in the paper _Fourier Transform-based ins
 
 The accepted **k-AP** instance format, inspired by the one used in QAPLIB, is the following:
 
+---
 **k** &larr; Number of dimensions in the problem.  
 **n** &larr; Instance size.  
 **D** &larr; Distance tensor of n^k elements. The k-th dimension is separated by spaces, while each of the remaining i-th dimensions is separated by k-i line breaks.  
 **H** &larr; Flow tensor of n^k elements. The k-th dimension is separated by spaces, while each of the remaining i-th dimensions is separated by k-i line breaks.  
+---
 
 For reference, the _data_ folder contains examples of valid **2-AP**, **3-AP** and **4-AP** instances.
 
