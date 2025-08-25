@@ -30,7 +30,7 @@ For example, the following command performs the decomposition of the _./data/2-A
 bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed -d
 ```
 
-Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will be stored in a file called $a_1$ \_ $a_2$ ...\_ $a_m$ .dat.
+Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will be stored in a file called $a_1$ \_ $a_2$ ...\_ $a_m$ _.dat_.
 
 ## Requirements
 
