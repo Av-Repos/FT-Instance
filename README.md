@@ -4,7 +4,7 @@ This repository contains the code used in the paper _Fourier Transform-based ins
 
 ## k-AP instance format
 
-The accepted **k-AP** instance format, inspired by the one used in QAPLIB, is the following:
+The accepted **k-AP** instance format, inspired by the one used in _QAPLIB_, is the following:
 
 > **k** &larr; Number of dimensions in the problem.  
 > **n** &larr; Instance size.  
@@ -20,8 +20,8 @@ Given a valid **k-AP** instance, its decomposition can be obtained using the _ba
   - **i**: Path of the instance to be decomposed.
   - **o**: Highest order components to be considered in the decomposition.
   - **s**: Path in which to save the generated sub-instance folder.
-  - **p**: Precision for the MPFR library (256 bits by default).
-  - **d**: If set, standardizes the generated sub-instances so that the standard deviation of their objective function is 1 (except for the _(n)_ component).
+  - **p**: Precision for the _MPFR_ library (256 bits by default).
+  - **d**: If set, standardizes the generated sub-instances so that the standard deviation of their objective function is 1.
   - **a**: If set, accumulates generated sub-instances by order.
 
 For example, the following command performs the decomposition of the _./data/2-AP.dat_ instance, storing the standardized sub-instances in the _./data/2-AP-decomposed_ folder:
@@ -30,4 +30,9 @@ For example, the following command performs the decomposition of the _./data/2-A
 bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed -d
 ```
 
-Note that the sub-instance associated to the partition (a1,...,am) will be stored in a file called _a1\_...\_am.dat_.
+Note that the sub-instance associated to the partition $(a1,...,am)$ will be stored in a file called _$a1$\_...\_$am$.dat_.
+
+## Requirements
+
+  - [MPFR GNU library](https://www.mpfr.org/) for the multiple precision computation.
+  - [OPENMP library](https://www.openmp.org/) for the parallel computation.
