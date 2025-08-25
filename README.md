@@ -35,4 +35,4 @@ Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will 
 ## Requirements
 
   - [MPFR GNU library](https://www.mpfr.org/) for the multiple precision computation.
-  - [OPENMP library](https://www.openmp.org/) for the parallel computation.
+  - [OpenMP library](https://www.openmp.org/) for the parallel computation.
