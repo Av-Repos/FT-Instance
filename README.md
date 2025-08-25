@@ -2,7 +2,7 @@
 
 This repository contains the code used in the paper _Fourier Transform-based instance decomposition for k-adic Assignment Problems_.
 
-## k-AP instance format
+## k-AP instance format 📝
 
 The accepted **k-AP** instance format, inspired by the one used in _QAPLIB_, is the following:
 
@@ -13,7 +13,7 @@ The accepted **k-AP** instance format, inspired by the one used in _QAPLIB_, is 
 
 For reference, the _data_ folder contains examples of valid **2-AP**, **3-AP** and **4-AP** instances.
 
-## Decomposition usage
+## Decomposition usage 🧩
 
 Given a valid **k-AP** instance, its decomposition can be obtained using the _bash run.sh_ command with the following flags:
 
@@ -24,15 +24,15 @@ Given a valid **k-AP** instance, its decomposition can be obtained using the _ba
   - **d**: If set, standardizes the generated sub-instances so that the standard deviation of their objective function is 1.
   - **a**: If set, accumulates generated sub-instances by order.
 
-For example, the following command performs the decomposition of the _./data/2-AP.dat_ instance, storing the standardized sub-instances in the _./data/2-AP-decomposed_ folder:
+For example, the following command performs the decomposition of the _./data/2-AP.dat_ instance, storing the standardized sub-instances in the _./data/2-AP-decomposed/_ folder:
 
 ```
-bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed -d
+bash run.sh -i ./data/2-AP.dat -o 2 -s ./data/2-AP-decomposed/ -d
 ```
 
 Note that the sub-instance associated to the partition $(a_1,a_2,...,a_m)$ will be stored in a file called $a_1$ \_ $a_2$ ...\_ $a_m$ _.dat_.
 
-## Requirements
+## Requirements ✅
 
   - [MPFR GNU library](https://www.mpfr.org/) for the multiple precision computation.
   - [OpenMP library](https://www.openmp.org/) for the parallel computation.
